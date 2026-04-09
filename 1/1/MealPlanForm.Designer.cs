@@ -1,6 +1,6 @@
 ﻿namespace _1
 {
-    partial class Form1
+    partial class MealPlanForm
     {
         /// <summary>
         ///  Required designer variable.
