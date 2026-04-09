@@ -16,5 +16,7 @@ namespace _1
         {
             InitializeComponent();
         }
+
+        public Recipe Recipe { get; internal set; }
     }
 }
