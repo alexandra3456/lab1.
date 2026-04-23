@@ -1,4 +1,6 @@
-﻿public class MealPlan
+﻿using _1;
+
+public class MealPlan
 {
     private Dictionary<DateTime, Recipe> plan = new Dictionary<DateTime, Recipe>();
     private ListView listView;
@@ -18,7 +20,7 @@ entry.Value.Name }));
     }
     public void AddRecipeToPlan()
     {
-        var addRecipeForm = new AddRecipeForm();
+        var addRecipeForm = new _1.AddRecipeForm();
         addRecipeForm.ShowDialog();
         if (addRecipeForm.DialogResult == DialogResult.OK)
         {

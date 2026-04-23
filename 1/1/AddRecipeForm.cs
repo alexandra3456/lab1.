@@ -16,5 +16,11 @@ namespace _1
         {
             InitializeComponent();
         }
+
+        public string Description { get; internal set; }
+        public List<string> Ingredients { get; internal set; }
+        public List<string> Instructions { get; internal set; }
+        public int Calories { get; internal set; }
+        public DateTime Date { get; internal set; }
     }
 }

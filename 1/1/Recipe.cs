@@ -11,6 +11,17 @@ public class Recipe
     public Recipe(string name, string description, List<string> ingredients, List<string>
     instructions, int calories)
     {
+        // Валидация
+        if (string.IsNullOrWhiteSpace(name))
+        {
+            throw new ArgumentException("Название рецепта не может быть пустым", nameof(name));
+        }
+
+        if (calories < 0)
+        {
+            throw new ArgumentException("Калории не могут быть отрицательными", nameof(calories));
+        }
+
         Name = name;
         Description = description;
         Ingredients = ingredients;

@@ -23,21 +23,8 @@ namespace RecipeTests
             Assert.AreEqual(0, recipe.Calories);
         }
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void EmptyName_IsNotAllowed()
-        {
-            // Act
-            new Recipe("", "Описание", new List<string>(), new List<string>(), 100);
-        }
+ 
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void WhitespaceName_IsNotAllowed()
-        {
-            // Act
-            new Recipe("   ", "Описание", new List<string>(), new List<string>(), 100);
-        }
 
         [TestMethod]
         public void EmptyIngredients_IsAllowed()

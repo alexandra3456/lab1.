@@ -1,10 +1,10 @@
-public class MealPlanForm : Form
+public partial class MealPlanForm : Form
 {
-    private MealPlan mealPlan;
-    private ListView listView;
-    private Button addRecipeButton;
-    private Button removeRecipeButton;
-    private Button searchRecipeButton;
+    public MealPlan mealPlan;
+    public ListView listView;
+    public Button addRecipeButton;
+    public Button removeRecipeButton;
+    public Button searchRecipeButton;
     public MealPlanForm()
     {
         this.Text = "Планирование меню";
