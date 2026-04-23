@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace RecipeTests
+namespace TestProject
 {
     [TestClass]
     public class MealPlanTests

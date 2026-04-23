@@ -1,19 +1,19 @@
 public partial class MealPlanForm : Form
 {
-    private MealPlan mealPlan;
-    private ListView listView;
-    private Button addRecipeButton;
-    private Button removeRecipeButton;
-    private Button searchRecipeButton;
+    public MealPlan mealPlan;
+    public ListView listView;
+    public Button addRecipeButton;
+    public Button removeRecipeButton;
+    public Button searchRecipeButton;
     public MealPlanForm()
     {
         this.Text = "Планирование меню";
-        this.Width = 500;
-        this.Height = 400;
+        this.Width = 400;
+        this.Height = 350;
         CreateControls();
         mealPlan = new MealPlan(listView);
     }
-    private void CreateControls()
+    public void CreateControls()
     {
         listView = new ListView
         {
@@ -49,25 +49,5 @@ public partial class MealPlanForm : Form
         this.Controls.Add(addRecipeButton);
         this.Controls.Add(removeRecipeButton);
         this.Controls.Add(searchRecipeButton);
-    }
-
-    private void button1_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void listView1_SelectedIndexChanged(object sender, EventArgs e)
-    {
-
-    }
-
-    private void button2_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void button3_Click(object sender, EventArgs e)
-    {
-
     }
 }
